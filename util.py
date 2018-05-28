@@ -1,5 +1,22 @@
 from collections import Counter
     
+def capitalize(i_str,loc=0):
+    """
+	String capitalized at the location specified by loc
+	"""
+	s1 = i_str[loc]
+    return  i_str.replace(s1,s1.upper(),1)
+	
+
+def rreverse(s):
+	"""
+	Reverse string reccursively
+	"""
+    if s == "0":
+        return s
+    else:
+        return rreverse(s[1:]) + s[0]	
+	
 def count_list(i_ls):
     """returns a dict with count of each element
        in the input list as key value pairs
